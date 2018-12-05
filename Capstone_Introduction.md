@@ -1,4 +1,4 @@
-# Using Foursquare venues data to deduce predominant ethnic composition of New Yourk City neighborhoods
+# Using Foursquare venues data to deduce predominant ethnic composition of New York City neighborhoods
 
 ## Introduction
 
