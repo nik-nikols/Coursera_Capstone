@@ -129,6 +129,31 @@ I used _k-means_ algorithm implementation from **sklearn** package to do the clu
 
 ## Results
 
+After getting the data for New York neighborhoods and venues and preparing it as described above, and performing k-mean clustering, I found four distinct clusters of neighborhoods. To illustrate, here is a map of New York with resulting clusters of neighborhoods:
+
+![NYC Map with Clusters](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/NYC_Neighborhoods_Clusters.jpg)
+
+Colored markers correspond to four clusters:
+- Red - Cluster 1
+- Violet - Cluster 2
+- Light Blue - Cluster 3
+- Yellow-Green - Cluster 4
+
+Now, let's look at each cluster's top ten categories:
+### Cluster 1:
+![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster1.jpg)
+
+### Cluster 2:
+![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster2.jpg)
+
+### Cluster 3:
+![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster3.jpg)
+
+### Cluster 4:
+![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster4.jpg)
+
+
+
 
 
 <a name="discussion"/>
