@@ -44,14 +44,91 @@ For restaurants data, I am going to use venues search available in Foursquare AP
 <a name="methodology"/>
 
 ## Methodology
-To run neighborhoods analysis, I need the description of  NYC neighborhoods geographic boundaries. I downloaded JSON file with names and coordinates of neighborhoods in all five boroughs from https://geo.nyu.edu/download/file/nyu-2451-34572-geojson.json. After loading JSON data from that file, the list of neighborhoods with latitude and longitude coordinates can be extracted from "features" key. We load all the neighborhoods for each borough with latitude and longitude coordinates of the neighborhood's center point into Pandas dataframe.
+To run neighborhoods analysis, I need the description of  NYC neighborhoods geographic boundaries. I downloaded JSON file with names and coordinates of neighborhoods in all five boroughs from https://geo.nyu.edu/download/file/nyu-2451-34572-geojson.json. After loading JSON data from that file, the list of neighborhoods with latitude and longitude coordinates can be extracted from "features" key. We load all the neighborhoods for each borough with latitude and longitude coordinates of the neighborhood's center point into Pandas dataframe. Here I used the code from course's labs, with slight modification. After looking at the neighborhoods closely, it appears that there are several instances of neighborhoods overstepping borough's boundaries, so there are entries with the same neighborhood name in different boroughs. So I added borough's name to the name of the neighborhood, to make it unique.
+
 After that we can render all the neighborhoods on the map of New York using folium mapping library, to check that the data looks right so far:
 ![NYC Map](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/NYC_Neighborhoods.jpg)
 
+Now we need the data about restaurants in every neighborhood. I used Foursquare API for that purpose. Foursquare API has search method that allows you to find venues in particular category (in our case, restaurants) around particular location. Unfortunately, when I tried to search for restaurants in every neighborhood by sending requests one by one for all of them, API stopped responding before I reached the end of the list. So I had to split my requests to send them in series for one borough at a time. So eventually, I have the list of restaurants in all neighborhoods in all five boroughs. 
+
+Another limitation in the free version of Foursquare API is that it seems to return no more that 50 venues for each search. That might adversely affect the results of the analysis, so it would be interesting to try it with full version and see what difference it would make.
+
+Looking at the venue categories counts for Brooklyn, for example, it is easy to see that a lot of categories are rather generic (like _coffee shop_, _doughnut shop_, just _food_, or _restaurant_). Such categories would probably not be terribly useful in our analysis, so I filtered them out, and only left the entries for categories that might point at particular ethnic background. Categories used in the subsequent analysis are:
+- Italian Restaurant
+- Mexican Restaurant
+- Chinese Restaurant
+- French Restaurant
+- Ramen Restaurant
+- Thai Restaurant
+- Mediterranean Restaurant
+- Japanese Restaurant
+- Indian Restaurant
+- Spanish Restaurant
+- Sushi Restaurant
+- Latin American Restaurant
+- Asian Restaurant
+- Greek Restaurant
+- Taco Place
+- Noodle House
+- Korean Restaurant
+- Caribbean Restaurant
+- Vietnamese Restaurant
+- Tapas Restaurant
+- Dim Sum Restaurant
+- Cuban Restaurant
+- Dumpling Restaurant
+- Udon Restaurant
+- Falafel Restaurant
+- Lebanese Restaurant
+- Burrito Place
+- Southern / Soul Food Restaurant
+- German Restaurant
+- Beer Garden
+- Filipino Restaurant
+- Australian Restaurant
+- Swiss Restaurant
+- Moroccan Restaurant
+- Peruvian Restaurant
+- Sake Bar
+- Ethiopian Restaurant
+- Middle Eastern Restaurant
+- Poke Place
+- Taiwanese Restaurant
+- Malay Restaurant
+- Szechuan Restaurant
+- Hawaiian Restaurant
+- Soba Restaurant
+- Turkish Restaurant
+- Kosher Restaurant
+- Israeli Restaurant
+- Jewish Restaurant
+- Cantonese Restaurant
+- South Indian Restaurant
+- Creperie
+- Shanghai Restaurant
+- Arepa Restaurant
+- African Restaurant
+- Tex-Mex Restaurant
+- Irish Pub
+- Halal Restaurant
+- English Restaurant
+- Paella Restaurant
+- Japanese Curry Restaurant
+- Kebab Restaurant
+- Argentinian Restaurant
+- Ukrainian Restaurant
+
+
+After filtering the datasets, I concatenated all the rows from these five datasets into single dataset.
+
+After applying one hot encoding to the venue categories in that dataset and calculating frequency of occurrence for each category in every neighborhood, we get the dataset that we are going to use for clustering.
+
+I used _k-means_ algorithm implementation from **sklearn** package to do the clustering. Same package has been used to calculate _silhouette score_ for different numbers of clusters, to find an optimal number of clusters.
 
 <a name="results"/>
 
 ## Results
+
 
 
 <a name="discussion"/>
