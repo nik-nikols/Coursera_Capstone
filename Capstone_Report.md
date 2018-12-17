@@ -142,16 +142,19 @@ Colored markers correspond to four clusters:
 Now, let's look at each cluster's top ten categories:
 ### Cluster 1:
 ![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster1.jpg)
+This cluster is kind of a mix of various cuisines, probably showing neighborhoods with no particular ethnic trends.
 
 ### Cluster 2:
-![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster2.jpg)
+![Cluster 2](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster2.jpg)
+This cluster indicates preeminence of Italian restaurants.
 
 ### Cluster 3:
-![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster3.jpg)
+![Cluster 3](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster3.jpg)
+In this cluster, we can see a lot of Caribbean restaurants in top 10.
 
 ### Cluster 4:
-![Cluster 1](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster4.jpg)
-
+![Cluster 4](https://github.com/nik-nikols/Coursera_Capstone/blob/master/images/Cluster4.jpg)
+This cluster includes neighborhoods where Chinese food seems to be quite popular.
 
 
 
@@ -159,13 +162,39 @@ Now, let's look at each cluster's top ten categories:
 <a name="discussion"/>
 
 ## Discussion
+We found that New York City neighborhoods fall into four distinct clusters based on the prevalence of particular types of food establishments. Let's see how we can interpret that result and check if our inferences are supported by known demographic data.
 
+For the first cluster, there is no particular trend among top 10 restaurants, so we could presume that the ethnic composition of the neighborhoods included in that cluster is rather mixed. It is also the biggest cluster with 164 neighborhoods. 
 
+Second cluster shows an abundance of Italian restaurants. We can presume that it might point to sizable Italian American population. 18 out of 28 neighborhoods in this cluster are on the Staten Island. According to Wikipedia, Italian Americans constitute about 36% of Staten Island's inhabitants[^1]. 
+
+Third cluster has a lot of Caribbean restaurants in top 10. It would be reasonable to expect significant number of immigrants and their descendants who came from Caribbean islands in these communities. Indeed, let's look at some of the neighborhoods in this cluster and what Wikipedia tells about their demographics. For example, Cambria Heights in Queens "has a large middle class Caribbean and African American population"[^2]. Canarsie in Brooklyn has population which "is mostly black due to significant  West Indian immigration in the area"[^3].
+
+Fourth cluster is dominated by Chinese and other Asian restaurants in top 10, so we can probably expect to find corresponding ethnic groups in these neighborhoods. And, in fact, Chinatown in Manhattan and Bensonhurst in Brooklyn fall into this cluster. However, there are also neighborhoods in this group with no big Asian groups, like Allerton in Bronx or Astoria Heights in Queens. That might point to the fact that Chinese restaurants may be popular among other groups, too.
 
 <a name="conclusion"/>
 
 ## Conclusion
+So what can we conclude from our exercise in clustering big city's neighborhoods by kinds of most popular restaurant categories in the area? Can we use it to infer ethnic composition of local population?
 
+It looks like in some cases, it may be a viable approach, at least as a rough guess. Classification is not precise, of course. Some foods became widely popular among diverse groups, so it depends on how specific the categories we choose for analysis are. We saw that Chinese restaurants may be indicative of significant Asian portion in local demography if there are a lot of other Asian establishments, like noodle houses, sushi restaurants and dumpling restaurants in the area. In other cases, they may be just one part in a mixed food landscape of really diverse area, or their popularity may be explained by other factors, like low price and quick service, for example.
+
+For Caribbean restaurants, on the other hand, their presence as most popular group in the neighborhood most often hints at significant numbers of inhabitants with Caribbean and West Indian roots.
+
+There should also be a big enough number of restaurants in the area for this method to work, so the neighborhoods should be large and densely populated. It would not work for a small town, but produces some reasonable results for huge New York City with its millions of dwellers.
+
+It would be interesting to see how the results would change if we use the complete data that might be available to paying Foursquare users, and not just 50 entries per neighborhood, as in free version.
+
+The other possible improvement might be to try to group multiple entries into categories, like for example Asian for Vietnamese, Chinese, Malay, Japanese etc, European for Italian, French, German and other European restaurants, Middle Eastern for Falafel, Israeli, Jewish, Kosher, Halal, Lebanese and so on, and try clustering on those higher level categories.
+
+But even with these limitations, neighborhoods clustering based on the publicly available data about restaurants can be used to discover ethnic enclaves in a big city. 
+
+<hr/>
+
+## Bibliography
+[^1]: [Demographics of Staten Island](https://en.wikipedia.org/wiki/Demographics_of_Staten_Island) 
+[^2]: [Cambria Heights, Queens](https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics) 
+[^3]: [Canarsie, Brooklyn](https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics) 
 
 
 
