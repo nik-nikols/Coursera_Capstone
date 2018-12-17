@@ -193,8 +193,11 @@ But even with these limitations, neighborhoods clustering based on the publicly 
 
 ## Bibliography
 [1]: [Demographics of Staten Island](https://en.wikipedia.org/wiki/Demographics_of_Staten_Island) 
+
 [2]: [Cambria Heights, Queens](https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics) 
+
 [3]: [Canarsie, Brooklyn](https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics) 
+
 
 
 
