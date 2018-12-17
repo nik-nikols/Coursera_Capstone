@@ -166,9 +166,9 @@ We found that New York City neighborhoods fall into four distinct clusters based
 
 For the first cluster, there is no particular trend among top 10 restaurants, so we could presume that the ethnic composition of the neighborhoods included in that cluster is rather mixed. It is also the biggest cluster with 164 neighborhoods. 
 
-Second cluster shows an abundance of Italian restaurants. We can presume that it might point to sizable Italian American population. 18 out of 28 neighborhoods in this cluster are on the Staten Island. According to Wikipedia, Italian Americans constitute about 36% of Staten Island's inhabitants[^1]. 
+Second cluster shows an abundance of Italian restaurants. We can presume that it might point to sizable Italian American population. 18 out of 28 neighborhoods in this cluster are on the Staten Island. According to Wikipedia, Italian Americans constitute about 36% of Staten Island's inhabitants[1]. 
 
-Third cluster has a lot of Caribbean restaurants in top 10. It would be reasonable to expect significant number of immigrants and their descendants who came from Caribbean islands in these communities. Indeed, let's look at some of the neighborhoods in this cluster and what Wikipedia tells about their demographics. For example, Cambria Heights in Queens "has a large middle class Caribbean and African American population"[^2]. Canarsie in Brooklyn has population which "is mostly black due to significant  West Indian immigration in the area"[^3].
+Third cluster has a lot of Caribbean restaurants in top 10. It would be reasonable to expect significant number of immigrants and their descendants who came from Caribbean islands in these communities. Indeed, let's look at some of the neighborhoods in this cluster and what Wikipedia tells about their demographics. For example, Cambria Heights in Queens "has a large middle class Caribbean and African American population"[2]. Canarsie in Brooklyn has population which "is mostly black due to significant  West Indian immigration in the area"[3].
 
 Fourth cluster is dominated by Chinese and other Asian restaurants in top 10, so we can probably expect to find corresponding ethnic groups in these neighborhoods. And, in fact, Chinatown in Manhattan and Bensonhurst in Brooklyn fall into this cluster. However, there are also neighborhoods in this group with no big Asian groups, like Allerton in Bronx or Astoria Heights in Queens. That might point to the fact that Chinese restaurants may be popular among other groups, too.
 
@@ -192,9 +192,11 @@ But even with these limitations, neighborhoods clustering based on the publicly 
 <hr/>
 
 ## Bibliography
-[^1]: [Demographics of Staten Island](https://en.wikipedia.org/wiki/Demographics_of_Staten_Island) 
-[^2]: [Cambria Heights, Queens](https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics) 
-[^3]: [Canarsie, Brooklyn](https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics) 
+[1]: [Demographics of Staten Island](https://en.wikipedia.org/wiki/Demographics_of_Staten_Island) 
+[2]: [Cambria Heights, Queens](https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics) 
+[3]: [Canarsie, Brooklyn](https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics) 
+
+
 
 
 
