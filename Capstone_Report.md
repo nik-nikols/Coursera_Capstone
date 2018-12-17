@@ -194,13 +194,13 @@ But even with these limitations, neighborhoods clustering based on the publicly 
 
 ## Bibliography
 <a name="ref1"/>
-1. <a href="https://en.wikipedia.org/wiki/Demographics_of_Staten_Island">Demographics of Staten Island</a> 
+1. <a href="https://en.wikipedia.org/wiki/Demographics_of_Staten_Island">Demographics of Staten Island</a> <br/>
 
 <a name="ref2"/>
-2. <a href="https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics">Cambria Heights, Queens</a>
+2. <a href="https://en.wikipedia.org/wiki/Cambria_Heights,_Queens#Demographics">Cambria Heights, Queens</a> <br/>
 
 <a name="ref3"/>
-3. <a href="https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics">Canarsie, Brooklyn</a>
+3. <a href="https://en.wikipedia.org/wiki/Canarsie,_Brooklyn#Demographics">Canarsie, Brooklyn</a> <br/>
 
 
 
